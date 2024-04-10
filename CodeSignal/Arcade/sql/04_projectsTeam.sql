@@ -1,0 +1,5 @@
+CREATE PROCEDURE solution()
+BEGIN
+	SELECT DISTINCT(name) AS name FROM projectLog
+	ORDER BY name;
+END
