@@ -1,14 +1,14 @@
 import sys
-from sys import stdin
+k = int(sys.stdin.readline())
 
-k = int(stdin.readline()) 
-stack= []
+stk = []
 
-for i in range (0, k) :
-    temp = int(stdin.readline())    
-    if temp != 0: 
-        stack.append(temp)
-    else : 
-        stack.pop()
+for _ in range(k):
+    number = int(sys.stdin.readline()) 
+    if number != 0:
+        stk.append(number)
+    else:
+        if stk: 
+            stk.pop()
 
-print(sum(stack))
+print(sum(stk))
