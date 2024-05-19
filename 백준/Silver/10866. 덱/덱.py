@@ -10,7 +10,6 @@ for i in range(N):
         deq.appendleft(int(cmd[1]))
     elif cmd[0] == "push_back":
         deq.append(int(cmd[1]))
-      
     elif cmd[0] == "pop_front":
         try:
             print(deq.popleft())
